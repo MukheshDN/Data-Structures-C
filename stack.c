@@ -1,8 +1,7 @@
-// Online C compiler to run C program online
 #include <stdio.h>
  int top=-1;
  int n;
- 
+//push function 
 void push( int stack[],int val){
        if(top==n-1){
            printf("stack is fulled \n");
@@ -18,7 +17,7 @@ void push( int stack[],int val){
        }
        printf("\n");
    }
-   
+//pop function   
 int pop(int stack[]){
     if (top==-1){
         printf("under flow\n ");
@@ -39,7 +38,7 @@ int main() {
    int d;
    char ans='y';
    while(ans=='y'|| ans=='Y'){
-   printf("enter to  1 insert into the stack and enter 2 to remove elemnt from stack\n");
+   printf("enter to  1 insert into the stack and enter 2 to remove element from stack\n");
    scanf("%d",&d);
    switch(d){
        case 1:
